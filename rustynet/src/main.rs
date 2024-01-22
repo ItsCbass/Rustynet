@@ -6,7 +6,7 @@ use std::process;
 
 fn main() {
     // Taking usr input yaaaay
-    let argsL Vec<String> = env::args().collect();
+    let args: Vec<String> = env::args().collect();
 
     // Check if the usr passed enough shit 
     if args.len() != 2 {
@@ -62,7 +62,7 @@ fn handle_client(mut stream: TcpStream) {
             true
         },
         Err(_) => { // Error handling when something ineviably fucks up <3
-            println!("Something fucked up, terminating the connection with {}", stream.perr_addr().unwrap());
+            println!("Something fucked up, terminating the connection with {}", stream.peer_addr().unwrap());
             stream.shutdown(std::net::Shutdown::Both).unwrap();
             false
         }
