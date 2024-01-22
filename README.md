@@ -1,7 +1,5 @@
 # Rustynet - A TCP Server/Client written in Rust 🚀
-
-![Rust](https://img.shields.io/badge/Rust-Programming%20Language-blue)
-![Networking](https://img.shields.io/badge/Networking-TCP-red)
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
 
 This is just a simple TCP server and client application written in Rust. It's nothing special, just a small project to get into Rust and network programming.
 
@@ -23,6 +21,7 @@ Clone the repository to your local machine:
 ```bash
 git clone https://github.com/your-username/rust-tcp-client-server.git
 cd rust-tcp-client-server
+```
 
 ## Usage 💡
 Compile the project first:
